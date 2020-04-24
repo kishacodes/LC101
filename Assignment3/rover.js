@@ -16,7 +16,7 @@ class Rover {
   buildResults(commands, results = []) {
     for (const command of commands) {
       let result = { completed: true };
-      if (command["commandType"] === "NORMAL") {
+      if (command["commandType"] === "MOVE") {
         if (!(this.mode === "LOW_POWER")) {
           this.position = command["value"];
         } else {

@@ -1,3 +1,5 @@
+//Jasmine tested 7-14 for Assignment 3
+
 const assert = require("assert");
 const Rover = require("../rover.js");
 const Message = require("../message.js");
@@ -56,7 +58,7 @@ describe("Rover class", function () {
     rover.mode = "NORMAL";
 
     let modeChangeNewValue = "LOW_POWER";
-    let commands = [new Command("MODE_CHANGE, modeChangeNewValue")];
+    let commands = [new Command("MODE_CHANGE", modeChangeNewValue)];
     let message = new Message("Test MODE_CHANGE command", commands);
 
     let response = rover.receiveMessage(message);
@@ -110,7 +112,5 @@ describe("Rover class", function () {
       completed: false,
       message: "UNKNOWN COMMAND",
     });
-
-    // assert.strictEqual(response["results"][0]["completed"], false);
   });
 });
