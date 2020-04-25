@@ -50,6 +50,8 @@ describe("Rover class", function () {
     let message = new Message("Test STATUS_CHECK command", commands);
     let response = rover.receiveMessage(message);
     let roverStatusObject = response.results[0]["roverStatus"];
+
+    assert.strictEqual(roverStatusObject.mode, rover.mode);
   });
 
   //Test 11
