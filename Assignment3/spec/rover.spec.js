@@ -52,6 +52,8 @@ describe("Rover class", function () {
     let roverStatusObject = response.results[0]["roverStatus"];
 
     assert.strictEqual(roverStatusObject.mode, rover.mode);
+    assert.strictEqual(roverStatusObject.position, rover.position);
+    assert.strictEqual(roverStatusObject.generatorWatts, rover.generatorWatts);
   });
 
   //Test 11
