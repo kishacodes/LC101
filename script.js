@@ -7,7 +7,7 @@ function init() {
   button = document.getElementById("liftoff");
   paragraph = document.querySelector("p");
 
-  // Put your code for the exercises here.
+  // Put your code for the exercises here. 3
 }
 
 window.onload = init;
