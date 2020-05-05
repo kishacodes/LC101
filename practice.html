@@ -1,30 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Button click handler</title>
+    <title>Flight Simulator</title>
+    <script src="script.js"></script>
   </head>
   <body>
-    <h1>Ring the Doorbell</h1>
-    <p id="main-text" class="orange" style="font-weight: bold;">
-      a bunch of really valuable text...
-    </p>
-    <button id="ring-button">Ring Bell</button>
-    <button id="greet-button">Greet Friends</button>
-    <script>
-      function youRang() {
-        document.getElementById("main-text").innerHTML += "you rang...";
-        console.log("you rang...");
-      }
-      function greetFriends() {
-        document.getElementById("main-text").innerHTML += "Hello Friends!";
-        console.log("Hello Friends!");
-      }
-      // Obtain a reference to the button element
-      let ring_button = document.getElementById("ring-button");
-      let greet_button = document.getElementById("greet-button");
-      // Set named function youRang as the click event handler
-      ring_button.addEventListener("click", youRang);
-      greet_button.addEventListener("click", greetFriends);
-    </script>
+    <h1>Flight Simulator</h1>
+    <p id="main-text">The shuttle is ready for takeoff</p>
+    <button id="liftoff">Take off</button>
+    <button id="abortMission">Abort mission</button>
   </body>
 </html>
