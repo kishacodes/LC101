@@ -21,10 +21,15 @@
           let rocketTypeInput = document.querySelector("input[name=rocketType]");
           let productionServersInput = document.querySelector("input[name=productionServers]");
 
-          if (testNameInput.value === "" || rocketTypeInput.value === "" || productionServersInput.value === "") {
+          if (testNameInput.value === "" || rocketTypeInput.value === "" || productionServersInput.value === "" || dateInput.value === "mm/dd/yyyy") {
             alert("All fields are required!");
+            event.preventDefault();
           }
         });
+        // let windRatingInput = document.querySelector("input[name=windRating]");
+        // if (windRatingInput.value === "No wind" ) {
+
+        // }
       });
 
 
@@ -44,12 +49,14 @@
 <label>Number of Rocket Boosters <input type="number" name="boosterCount" min="0" max ="9"></label>
 
 <label>Wind Rating:</label>
-<label>No wind <input type="radio" name="windRating" value="No wind" /> <br>
-  <label>Mild <input type="radio" name="windRating" value="Mild" /> <br>
-    <label>Strong <input type="radio" name="windRating" value="Strong" /> <br>
+<label>No wind <input type="radio" name="windRating" value="0" /> <br>
 
 
-<label>Use production grade servers <input type="checkbox"  name="productionServers" option value="on"/></label>
+  <label>Mild <input type="radio" name="windRating" value="10" /> <br>
+    <label>Strong <input type="radio" name="windRating" value="20" /> <br>
+
+
+<label>Use production grade servers <input type="checkbox"  checked name="productionServers" option value="on"/></label>
 <button> Run Simulation</button>
 
 
