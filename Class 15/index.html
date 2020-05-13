@@ -21,7 +21,7 @@
           let rocketTypeInput = document.querySelector("input[name=rocketType]");
           let productionServersInput = document.querySelector("input[name=productionServers]");
 
-          if (testNameInput.value === "" || rocketTypeInput.value === "" || productionServersInput.value === "" || dateInput.value === "mm/dd/yyyy") {
+          if (testNameInput.value === "" || rocketTypeInput.value === "" || productionServersInput.value === "" || dateInput.value === "") {
             alert("All fields are required!");
             event.preventDefault();
           }
